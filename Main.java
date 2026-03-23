@@ -4,11 +4,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value: ");
         int n = sc.nextInt();
-        int sum =0 ;
-        for(int i=1 ; i<=n;i++){
-          sum = sum+i;
+        System.out.println(count(n));
+    }
+    public static int count(int n){
+        int count = 0;
+        int temp = n ;
+        while(temp>0){
+            count = count+1 ;
+            temp = temp/10;
         }
-        System.out.println(sum);
+        return count;
     }
     
 }
