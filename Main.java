@@ -37,9 +37,23 @@ class Main {
         return result;
     }
 
+    public static long gcd_hcf(long n, long m){
+        long t;
+        if(n<m){
+            t = n;
+        }else{t = m;}
+        while(t>=0){
+            if(n%t==0 && m%t==0 ){
+                return t ;
+            }
+            t--;
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
        
-        System.out.println(factorial(5));
+        System.out.println(gcd_hcf(36,60));
 
         
 
