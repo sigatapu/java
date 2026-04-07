@@ -4,12 +4,13 @@ public class Practice {
 
        ArrayList<Integer> a = new ArrayList<>();
        ArrayList<Integer> b = new ArrayList<>();
-       b.add(92);
+       b= a;
        for(int i=10; i<=100 ; i=i+10){
            a.add(i);
        }
        a.set(0,999);
 //        System.out.println(a.set(0,999));
-        System.out.println(a.get(0));
-    }
+        a.set(1,20);
+        System.out.println(a);
+     }
 }
