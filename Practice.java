@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 public class Practice {
     public static void main(String[] args){
 
@@ -11,6 +11,7 @@ public class Practice {
        a.set(0,999);
 //        System.out.println(a.set(0,999));
         a.set(1,20);
+        Collections.sort(a,Collections.reverseOrder());
         System.out.println(a);
      }
 }
