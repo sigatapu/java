@@ -1,5 +1,8 @@
+import arrays.Arr;
 public class Main {
     public static void main(String args[]){
-        System.out.println("hello world");
+        int[] arr = {1,2,3,4,5};
+        Arr a = new Arr();
+        a.print_array(arr);
     }
 }
