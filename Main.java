@@ -1,11 +1,11 @@
-import arrays.Arr;
+import Logic.Logic;
 public class Main {
     public static void main(String args[]){
         
         int[] arr = {1,2,3,4,5};
-        Arr a = new Arr();
-        a.prefix_sum(arr);
-        a.print_array(arr);
+        Logic l = new Logic();
+        // System.out.println(l.sum_of_n(arr));
+        System.out.println(l.count_digit(5764576));
     }
 
 }
